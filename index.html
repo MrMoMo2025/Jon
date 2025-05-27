@@ -2,38 +2,125 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My PortFolio</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --text: #c9d1d9;
+      --accent: #58a6ff;
+      --header: #161b22;
+      --border: #30363d;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      background-color: var(--header);
+      padding: 2rem;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+
+    h1, h2 {
+      color: var(--accent);
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: 0.7rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: var(--header);
+      font-size: 0.9em;
+      border-top: 1px solid var(--border);
+    }
+
+    .tagline {
+      font-size: 1.1rem;
+      color: #8b949e;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Your Name</h1>
-    <p>Web Developer | Designer | Student</p>
+    <h1>Momo Lee </h1>
+    <p class="tagline">Aspiring Software Engineer | Web Developer | Problem Solver</p>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I'm a passionate developer who loves building web projects and learning new technologies.</p>
-  </section>
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>
+        I’m a passionate developer with a keen interest in full-stack development and UI/UX design. Currently seeking an opportunity to contribute to a forward-thinking team and build real-world solutions.
+      </p>
+    </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Project Title</h3>
-      <p>Description of your project. <a href="https://github.com/yourusername/project-repo" target="_blank">GitHub</a></p>
-    </div>
-    <!-- Add more projects as needed -->
-  </section>
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>💻 HTML, CSS, JavaScript, Python</li>
+        <li>🧱 React, Node.js, Express, Flask</li>
+        <li>⚙️ Git, GitHub, Figma, Firebase</li>
+      </ul>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: yourname@example.com</p>
-    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-  </section>
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Portfolio Website</strong> – <a href="https://github.com/MrMoMo2025/Jon/Portfolio">Portfolio</a></li>
+        <li><strong>Interest</strong> – <a href="https://github.com/MrMoMo2025/Jon/Interest">Interest</a></li>
+        <li><strong>Sport</strong> – <a href="https://github.com/MrMoMo2025/Jon/Sport">Sport</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/yourusername">linkedin.com/in/yourusername</a></p>
+      <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Your Name</p>
+    &copy; 2025 Your Name. All rights reserved.
   </footer>
 </body>
 </html>
